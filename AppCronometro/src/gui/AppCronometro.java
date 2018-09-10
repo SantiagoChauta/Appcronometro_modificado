@@ -115,14 +115,14 @@ public class AppCronometro implements ActionListener{
             frozen = false;
             forward = true;
             timer = new Timer();
-            timer.schedule(new RemindTask(),0, 1*10);
+            timer.schedule(new RemindTask(),0, 1*100);
             btnRetroceder.setEnabled(false);
         }
         if(a.getActionCommand().equals("Retroceder")){
             frozen = false;
             forward = false;
             timer = new Timer();
-            timer.schedule(new RemindTask(),0, 10);
+            timer.schedule(new RemindTask(),0, 100);
             btnIniciar.setEnabled(false);
         }
         if(a.getActionCommand().equals("Parar")){
